@@ -6,3 +6,12 @@ var TimeInTransit = require('./lib/timeInTransit');
 var Rating = require('./lib/rating');
 var Tracking = require('./lib/tracking');
 
+module.exports = {
+    ShipConfirm,
+    ShipAccept,
+    AddressValidation,
+    VoidShipment,
+    TimeInTransit,
+    Rating,
+    Tracking
+}

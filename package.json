@@ -1,5 +1,5 @@
 {
-  "name": "ups_node",
+  "name": "ups-shipping",
   "version": "0.0.6",
   "description": "A simple NodeJS module for integrating UPS APIs",
   "dependencies": {
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/richarddimalanta/ups-node-js.git"
+    "url": "git://github.com/zachzoup/ups-nodejs.git"
   },
   "keywords": [
     "ups",
@@ -27,9 +27,9 @@
     "rating",
     "pickup"
   ],
-  "author": "Richard Dimalanta",
+  "author": "Zach Harris",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/richarddimalanta/ups-node-js/issues"
+    "url": "https://github.com/zachzoup/ups-nodejs/issues"
   }
 }
