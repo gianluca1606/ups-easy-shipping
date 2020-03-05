@@ -1,6 +1,6 @@
 {
   "name": "ups-shipping",
-  "version": "0.0.6",
+  "version": "1.0.0",
   "description": "A simple NodeJS module for integrating UPS APIs",
   "dependencies": {
     "xml2js": "~0.4.0"
