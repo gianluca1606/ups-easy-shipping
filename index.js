@@ -1,17 +1,7 @@
-const AddressValidation = require("./lib/AddressValidation");
-const ShipConfirm = require("./lib/shipConfirm");
-const ShipAccept = require("./lib/shipAccept");
-const VoidShipment = require("./lib/voidShipment");
-const TimeInTransit = require("./lib/timeInTransit");
+const UPS = require("./lib/UPS");
 const Rating = require("./lib/rating");
-const Tracking = require("./lib/tracking");
 
 module.exports = {
-  ShipConfirm,
-  ShipAccept,
-  AddressValidation,
-  VoidShipment,
-  TimeInTransit,
+  UPS,
   Rating,
-  Tracking,
 };

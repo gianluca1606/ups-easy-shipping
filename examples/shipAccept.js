@@ -1,13 +1,10 @@
-const { ShipAccept } = require("../index.js");
+const { UPS } = require("../index.js");
 
 const main = async () => {
   try {
-    const acceptShipment = new ShipAccept("test123", "test123", "Test123");
+    const ups = new UPS("test123", "test123", "Test123", true, true);
 
-    acceptShipment.useSandbox(true);
-    acceptShipment.setJsonResponse(true);
-
-    const result = await acceptShipment.makeRequest({
+    const result = await ups.ShipAcceptRequest({
       digest: "rO0ABXNyACpjb20udXBzLmVjaXMuY29yZS5zaGlwbWVudHMuU2hpcG1lbnREaWdlc....",
     });
 

@@ -1,19 +1,16 @@
-const { AddressValidation } = require("../index.js");
+const { UPS } = require("../index.js");
 
 const main = async () => {
   try {
-    const AdressValidationn = new AddressValidation("test123", "test123", "Test123");
+    const ups = new UPS("test123", "test123", "Test123", true, true);
 
-    AdressValidationn.useSandbox(true);
-    AdressValidationn.setJsonResponse(true);
-
-    const result = await AdressValidationn.makeRequest({
+    const result = await ups.AdressValidationRequest({
       customerContext: "Customer Data",
       city: "Miami",
       stateProvinceCode: "FL",
     });
 
-    // if you receive XML Bacl please be aware of using
+    // if you receive XML Back please be aware of using
     // result.toString("utf8") in order to get an XML String
     console.log(result);
   } catch (error) {

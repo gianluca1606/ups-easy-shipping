@@ -1,13 +1,10 @@
-const { VoidShipment } = require("../index.js");
+const { UPS } = require("../index.js");
 
 const main = async () => {
   try {
-    const voidShipment = new VoidShipment("test123", "test123", "Test123");
+    const ups = new UPS("test123", "test123", "Test123", true, true);
 
-    voidShipment.useSandbox(true);
-    voidShipment.setJsonResponse(true);
-
-    const result = await voidShipment.makeRequest({
+    const result = await ups.VoidShipmentRequest({
       tracking: "FDSJ324832JFS",
     });
 

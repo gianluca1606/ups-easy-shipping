@@ -1,13 +1,10 @@
-const { TimeInTransit } = require("../index.js");
+const { UPS } = require("../index.js");
 
 const main = async () => {
   try {
-    const timeInTransit = new TimeInTransit("test123", "test123", "Test123");
+    const ups = new UPS("test123", "test123", "Test123", true, true);
 
-    timeInTransit.useSandbox(true);
-    timeInTransit.setJsonResponse(true);
-
-    const result = await timeInTransit.makeRequest({
+    const result = await ups.TimeInTransitRequest({
       customerContext: "Walter White",
       transitFrom: {
         fromCountryCode: "US",

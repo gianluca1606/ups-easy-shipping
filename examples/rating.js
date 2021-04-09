@@ -1,13 +1,10 @@
-const { Rating } = require("../index.js");
+const { UPS } = require("../index.js");
 
 const main = async () => {
   try {
-    const Ratingg = new Rating("test123", "test123", "Test123");
+    const ups = new UPS("test123", "test123", "Test123", true, true);
 
-    Ratingg.useSandbox(true);
-    Ratingg.setJsonResponse(true);
-
-    const result = await Ratingg.makeRequest({
+    const result = await ups.RatingRequest({
       customerContext: "Rating and Service",
       pickUpType: {
         code: "07",

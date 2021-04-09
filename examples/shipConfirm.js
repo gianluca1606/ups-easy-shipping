@@ -1,13 +1,10 @@
-const { ShipConfirm } = require("../index.js");
+const { UPS } = require("../index.js");
 
 const main = async () => {
   try {
-    const confirmShipment = new ShipConfirm("test123", "test123", "Test123");
+    const ups = new UPS("test123", "test123", "Test123", true, true);
 
-    confirmShipment.useSandbox(true);
-    confirmShipment.setJsonResponse(true);
-
-    const result = await confirmShipment.makeRequest({
+    const result = await ups.ShipConfirmRequest({
       validate: "nonvalidate",
       shipment: {
         description: "Shipment to Philippines",

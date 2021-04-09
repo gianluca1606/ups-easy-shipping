@@ -1,13 +1,10 @@
-const { Tracking } = require("../index.js");
+const { UPS } = require("../index.js");
 
 const main = async () => {
   try {
-    const tracking = new Tracking("test123", "test123", "Test123");
+    const ups = new UPS("test123", "test123", "Test123", true, true);
 
-    tracking.useSandbox(true);
-    tracking.setJsonResponse(true);
-
-    const result = await tracking.makeRequest({
+    const result = await ups.TrackingRequest({
       trackingNumber: "FDSJ324832JFS",
       customerContext: "FDSJ324832JFS",
     });

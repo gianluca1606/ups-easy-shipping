@@ -1,8 +1,9 @@
 {
-  "name": "ups-shipping",
+  "name": "ups-easy-shipping",
   "version": "1.0.0",
-  "description": "A simple NodeJS module for integrating UPS APIs",
+  "description": "A simple NodeJS module for integrating UPS APIs based on promises",
   "dependencies": {
+    "auto-bind": "^4.0.0",
     "xml2js": "~0.4.0"
   },
   "main": "index.js",
@@ -12,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/zachzoup/ups-nodejs.git"
+    "url": "https://github.com/gianluca1606/ups-easy-shipping"
   },
   "keywords": [
     "ups",
@@ -30,6 +31,6 @@
   "author": "Gianluca Santos Latina",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/zachzoup/ups-nodejs/issues"
+    "url": "https://github.com/gianluca1606/ups-easy-shipping/issues"
   }
 }
